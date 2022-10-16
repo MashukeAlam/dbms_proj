@@ -1,0 +1,101 @@
+
+        lll
+        <!-- 
+  
+        
+        <div class="item4"><strong>6000</strong></div>
+        <div class="item1">
+            <p>Jim</p>
+            <br />
+            <p>2147483647</p>
+        
+        </div> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<style>
+.item1 { grid-area: name; }
+.item2 { grid-area: manager; }
+.item3 { grid-area: desc; }
+.item4 { grid-area: rent; }
+.item5 { grid-area: mf; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'name name name name name name'
+    'manager desc desc desc rent rent'
+    'mf mf mf mf mf mf';
+  grid-gap: 10px;
+  background-color: rgb(229, 255, 181);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: start;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+@keyframes red {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+@keyframes green {
+    from {color: green;}
+    to {color: greenyellow;}
+}
+
+.delanim {
+    /* background-color: red; */
+    animation-name: red;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.succanim {
+    /* background-color: red; */
+    animation-name: green;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+</style>
+
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+    <div class="item1">
+        <h3 class="succanim">Bismillah</h3>
+        <p>131313asas</p>
+    </div>
+    <div class="item2"><p>Jim</p>
+        <p>2147483647</p></div>
+    <div class="item3">
+        <h4 class="delanim">aaaaaaaaaaaaaaaaaaa</h4>
+    </div>   
+    <div class="item4"><strong>6000</strong></div>
+    <div class="item5">
+        Meals: <span class="label label-success badges">beef</span><span
+            class="label label-success badges">rice</span>
+
+        <br />
+        Features: <span class="label label-info badges">wifi</span>
+    </div></div>
+    <img src="./icons/arrow.svg"/>
+
+</body>
+</html>

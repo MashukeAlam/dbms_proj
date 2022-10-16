@@ -1,0 +1,9 @@
+Steps:
+
+1: import 'db.sql' file in your phpmyadmin.
+2: Copy all the files into your /xampp/htdocs folder.
+
+3: Then type URL : localhost:80/product_form
+
+Hope this helps !
+

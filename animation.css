@@ -1,0 +1,22 @@
+@keyframes red {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+@keyframes green {
+    from {color: green;}
+    to {color: greenyellow;}
+}
+
+.delanim {
+    /* background-color: red; */
+    animation-name: red;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.succanim {
+    /* background-color: red; */
+    animation-name: green;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

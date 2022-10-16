@@ -1,0 +1,112 @@
+html {
+    --bg-color: rgb(255, 255, 255);
+    --offwhite: rgba(255, 255, 255, 0.8);
+    --lime-green: rgb(189, 255, 67);
+    --text-color: rgb(6, 31, 31);
+}
+
+html[data-theme="dark"] {
+    --bg-color: rgb(0, 0, 0);
+    --offwhite: rgba(53, 53, 53, 0.8);
+    --lime-green: rgb(22, 88, 25);
+    --text-color: rgb(214, 214, 214);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.th {
+    background-color: var(--bg-color);
+}
+
+.theme {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+.badges {
+    margin-left: 5px;
+}
+
+.name {
+    grid-area: name;
+}
+.manager {
+    grid-area: manager;
+}
+.desc {
+    grid-area: desc;
+}
+.rent {
+    grid-area: rent;
+}
+.mf {
+    grid-area: mf;
+}
+
+.post {
+    display: grid;
+    grid-template-areas:
+        "name name name name name name"
+        "manager desc desc desc rent rent"
+        "mf mf mf mf mf mf";
+    grid-gap: 4px;
+    background-color: var(--lime-green);
+    padding: 2px;
+    color: var(--text-color);
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.post > div {
+    background-color: var(--offwhite);
+    text-align: start;
+    padding: 20px 0;
+}
+
+.post > .manager {
+    text-align: center;
+}
+
+.post > .name {
+    text-align: center;
+}
+
+.post > .rent {
+    text-align: center;
+    font-size: x-large;
+}
+.post > .desc {
+    text-align: center;
+    /* font-size: x-large; */
+}
+
+.limit {
+    width: 800px;
+    height: 60px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+form > input {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+h3, h4 {
+  padding: 5px;
+  margin: 5px;
+}
+
+label {
+  margin: 10px;
+}
